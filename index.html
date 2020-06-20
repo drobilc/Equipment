@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaj potrebujem za Taborjenje?</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+
+    <script src="oprema.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+
+    <section class="uk-container uk-padding uk-container-xsmall" style="max-width: 500px;" id="header">
+        <div class="event-title-before">Seznam opreme za akcijo</div>
+        <div class="event-title">Taborjenje</div>
+        
+        <p>Taborjenje je skoraj že pred vrati, zato smo za vas pripravili seznam, s pomočjo katerega bo mukotrpno opravilo pakiranja postalo prav zabavno!</p>
+
+        <p>Si vsako leto pulite lase in se sprašujete kaj ste letos pozabili? Pozabite na to! S pomočjo gumba <strong>Prilagodi</strong> lahko seznam prilagodite svojim potrebam in doma ne pustite pomembnih stvari, kot so zobna ščetka, spalka in crop top.</p>
+
+        <p>Seznam je privzeto nastavljen na skupino "Medvedki in čebelice", ki bodo na taborjenju 7 dni. Po prilagoditvi se vam bodo preračunale količine predmetov, ki jih boste potrebovali tekom taborjenja.</p>
+
+        <p>Podatkov ne hranimo, vsi vaši odgovori so shranjeni le na vaši napravi. Obkljukani izdelki se vam tako ohranijo tudi, če spletno stran zaprete in se nanjo ponovno vrnete pozneje.</p>
+
+        <p>Zaradi resnih stranskih učinkov kot so: povišan stres, kazni zaradi prehitre vožnje do trgovine, preobremenjevanja pralnega stroja in družinskih prepirov, vam svetujemo, da s pakiranjem ne odlašate do zadnjega trenutka, temveč začnete pakirati že sedaj!</p>
+
+        <button class="uk-button uk-button-danger" id="button-customize">Prilagodi</button>
+    </section>
+    
+    <div class="uk-container uk-padding uk-container-xsmall" id="equipment">
+        <table class="uk-table uk-table-striped uk-table-small">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Količina</th>
+                    <th>Predmet</th>
+                </tr>
+            </thead>
+            <tbody id="list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <section class="uk-container uk-padding" style="text-align: center;">
+        <p>S pritiskom na spodnji gumb boste ponastavili vse vaše prilagoditve seznama in izbrisali obkljukane elemente.</p>
+        <button class="uk-button uk-button-default" id="button-reset">Ponastavi seznam</button>
+    </section>
+
+    <div id="customize" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog" id="dialog" uk-overflow-auto>
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div id="inner-dialog" uk-height-viewport>
+                <div id="emoji" class="uk-animation-scale-up">🌳</div>
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

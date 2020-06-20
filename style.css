@@ -1,0 +1,61 @@
+#header {
+    color: #333333;
+    text-align: center;
+    padding: 2em;
+}
+
+#header p {
+    text-align: left;
+}
+
+#header .event-title-before {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #3a3a3a;
+    margin-bottom: 0.8em;
+    margin-top: 2em;
+}
+
+#header .event-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+#inner-dialog {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 10vh;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#emoji {
+    margin-bottom: 5vh;
+    font-size: 4em;
+}
+
+#question {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+
+#answers {
+    padding: 1em;
+    padding-top: 0em;
+}
+
+#answers button {
+    margin-bottom: 1.5em;
+}
+
+.done {
+    color: #cacaca;
+    text-decoration: line-through;
+}
