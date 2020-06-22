@@ -59,3 +59,7 @@
     color: #cacaca;
     text-decoration: line-through;
 }
+
+.quantity {
+    text-align: center;
+}

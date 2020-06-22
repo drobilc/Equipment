@@ -58,7 +58,8 @@ function Environment() {
 //     * fixedQuantity(quantity), which always returns the specified quantity
 //     * alwaysDisplay(), which always displays the item 
 var EQUIPMENT = [
-    buildItem("<strong>Izjava staršev ali skrbnikov</strong>"),
+    buildItem('<strong><a href="http://mladibori.si/covid19/izjava_pred_taborjenjem.pdf">Podpisana izjava staršev ali skrbnikov</a> (obvezno!)</strong>'),
+    buildItem("<strong>Maska, rokavice in majhno osebno razkužilo</strong> (zapakirano v čisti vrečki)"),
     
     // Najbolj nujne stvari (podloge za spanje in spalna vreca)
     buildItem("Samonapihljiva blazina"),
@@ -98,15 +99,14 @@ var EQUIPMENT = [
     // Obutev - japonke in cevlji
     buildItem("Lahka obutev - natikači"),
     buildItem("Obutev za po vodi"),
-    buildItem("Telovadni copati (radi se zmočijo)", fixedQuantity(2)),
+    buildItem("Telovadni copati (vsaj dva para, ker se radi zmočijo)", fixedQuantity(2)),
     buildItem("Močnejši telovadni copati - pohodniški čevlji ali dodatni močnejši telovadni copati"),
 
     // Pribor za osebno higieno
     buildItem("Brisača za obraz"),
     buildItem("Zobna ščetka"),
     buildItem("Zobna pasta"),
-    buildItem("Bio Milo"),
-    buildItem("Bio Šampon"),
+    buildItem("Bio milo in šampon (otroci se bodo kopali v reki, zato naj bosta milo in šampon BIO, da ne bomo onesnaževali reke in njene okolice)"),
     buildItem("Glavnik"),
 
     // Za osebe z dolgimi lasmi dodamo se lastike za lase in balzam
@@ -124,6 +124,7 @@ var EQUIPMENT = [
     buildItem("Velik globok krožnik in velik nizek krožnik (ali menažka, <strong>vendar ne vojaška</strong>)"),
     buildItem("Kozarček za pijačo"),
     buildItem("Bombažna vrečka za posodo"),
+    buildItem("Krpa za brisanje posode"),
 
     buildItem("Sladkarije (🐜)", fixedQuantity(1), (environment) => environment.likesBugs),
 

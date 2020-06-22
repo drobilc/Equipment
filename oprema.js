@@ -47,6 +47,7 @@ function buildListElement(item, environment, index) {
     row.appendChild(checkboxColumn);
 
     let quantityColumn = document.createElement("td");
+    quantityColumn.className = "quantity";
     quantityColumn.innerText = item.quantity(environment);
     row.appendChild(quantityColumn);
 
